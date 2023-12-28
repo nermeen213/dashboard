@@ -1,0 +1,499 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+:root {
+    --main-color :#111632;
+    --body-color :#212941;
+    --first-color:#00AF89;
+    --second-color:#359DF3;
+    --three-color:#FF646E;
+    --four-color: #FFA000;
+    --link-color:#6F7994;
+    --font-color:#ccc;
+    --font-size:15px;
+    
+
+}
+body {
+    background-color: var(--body-color);
+}
+
+header , section , footer {
+   
+    max-width: 100%;
+    /* padding: 20px 0; */
+
+}
+img {
+    width: 100% !important;
+}
+p {
+    line-height: 30px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* start the css for side nav */
+
+
+.sidenav {
+    width: 70px;
+    height: 100%;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 1px solid var(--main-color);
+    color: var(--font-color);
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    
+}
+
+.sidenav::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+}
+.sidenav::-webkit-scrollbar-thumb {
+   
+    background-color: var(--link-color);
+    border-radius: 20px;
+}
+.sidenav::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+}
+.sidenav .sidemenu {
+/* border-top: 1px solid #fff; */
+background-color: transparent;
+height: 100% !important;
+
+
+}
+
+.sidenav .sidemenu a {
+    display: block;
+}
+.sidenav .sidemenu .items a:hover {
+    color: var(--link-color) !important;
+    transition: .5s;
+   
+}
+.sidenav .items:hover {
+    background-color: #6f799423;
+}
+.sidenav .items {
+   
+padding: 10px;
+margin: 2px 0;
+width: 100%;
+position: relative;
+}
+.sidenav .items a {
+    font-size:calc(var(--font-size)+1px) !important ;
+    color: var(--font-color);
+    letter-spacing: .6px;
+}
+.sidenav .items a.active {
+    color: var(--link-color);
+}
+
+.sidenav .items a span  {
+    margin-left: 16px;
+    margin-right: 20px;
+   
+   
+
+}
+
+.sidenav .sidemenu .sub-menu {
+    padding-left: 20px;
+    display: none;
+}
+.sidenav .sidemenu .sub-menu a {
+    margin: 7px;
+    width: 100%;
+
+}
+i {
+    font-size: 14px !important;
+}
+.fa-caret-down  {
+    font-size: 12px !important;
+}
+
+
+/* start the main div */
+
+.main-div {
+    
+    margin-left: 70px;
+   
+
+}
+ header {
+    background-color: var(--main-color) !important;
+    color: #ccc;
+  width: 100% !important;
+   
+}
+.openIcon {
+    display: none;
+}
+header i {
+    font-size: 25px !important;
+    margin: 0 15px;
+}
+.search i {
+    color: #ccc;
+    padding: 0;
+    margin: 0;
+    font-size: 15px !important;
+}
+.search input {
+    background-color: transparent;
+    box-shadow: 0;
+    border: 0;
+    color: #ccc;
+    padding: 5px;
+    margin-left: 10px;
+}
+.image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50% ;
+}
+.main-div .right-contain {
+    width: 40%;
+    /* padding-right: 100px; */
+}
+.message-box ,
+.profile {
+    background-color: var(--main-color) !important;
+    right: 50%;
+    top: 60px;
+    width: 220px;
+    padding: 10px;
+    color: #b1b1b5;
+    display: none;
+    z-index: 9999999;
+   
+}
+.message2-box {
+    background-color: var(--main-color) !important;
+    width: 250px;
+    padding: 10px;
+    color: #b1b1b5;
+    top: 60px;
+    z-index: 9999999;
+    display: none;
+}
+.kkkkk {
+   
+    z-index: 999999999999999;
+}
+.profile {
+   
+   left: 0% !important;
+   width: 200px !important;
+}
+.profile li {
+    cursor: pointer;
+    width: 100%;
+}
+.right-contain span i {
+    color: #fff !important;
+}
+.right-contain p {
+    font-size: 14px;
+}
+.profile i {
+    font-size: 15px !important;
+    
+}
+.main-div .profile li:hover {
+    background-color: #6f799423;
+}
+
+.message-box h6 {
+    font-size: 14px !important;
+}
+.message-box p {
+    font-size: 13px;
+}
+.message-box .image {
+    margin-right: 15px;
+   
+   
+}
+.poin {
+    cursor: pointer;
+}
+tr {
+    border-bottom: 1px solid #777;
+    
+}
+td {
+    /* padding: 10px; */
+}
+.image2 {
+
+}
+   
+
+
+/* banner */
+
+
+table .image {
+    font-size: 17px !important;
+    font-weight: 500;
+}
+.bannar {
+    width: 95%;
+   
+    margin: 30px auto;
+    padding: 15px 10px;
+    background-color: var(--main-color);
+    color: #ccc;
+    
+    border: 1px solid #cccccc88;
+}
+.border-div {
+    border: 1px solid #cccccc88;
+}
+.details {
+    width: 95%;
+    margin: 30px auto;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+
+.sales1 {
+    background-color: var(--first-color) !important;
+}
+.sales2 {
+    background-color: var(--second-color) !important;
+}
+.sales3 {
+    background-color: var(--three-color) !important;
+}
+.sales4 {
+    background-color: var(--four-color);
+}
+.details .fa-arrow-up {
+    transform: rotate(40deg);
+    /* : 10px 5px; */
+    font-size: 14px !important;
+    color: var(--first-color);
+    margin: 15px !important;
+}
+.charts .fa-arrow-up {
+    font-size: 14px !important;
+    padding: 0;
+    margin: 0;
+}
+.body-color {
+    background-color: var(--body-color);
+}
+footer {
+    color: #ccc;
+}
+
+
+/* ?>>>>>>>>>>    6500*........this is my salary in the bank  NERMEEN AHMED MANSOUR 01099126758 */
+ .details .fa-bag-shopping {
+    color: var(--second-color);
+    margin: 15px !important;
+}
+.fa-first-order {
+    color: var(--three-color);
+    margin: 15px !important;
+}
+.fa-arrow-up-right-dots {
+    color: var(--four-color);
+    margin: 15px !important;
+}
+.arrow-span {
+    background-color: #fff;
+    border-radius: 50%;
+    /* padding: 15px; */
+    margin: 0 10px;
+}
+.font-span {
+    font-size: 14px;
+}
+
+/* end banner */
+
+
+/* start charts */
+.charts {
+    width: 95%;
+    margin: 30px auto;
+    color: #ccc;
+
+}
+.charts .charts-text {
+    background-color: var(--main-color);
+}
+.charts .special {
+    color: var(--three-color);
+}
+.tall {
+    /* height: 300px; */
+}
+/* .height-div {
+    height: 450px !important;
+} */
+.card {
+    color: #ccc !important;
+}
+
+.fa-arrow-turn-up {
+    color: var(--first-color);
+}
+
+/* end charts */
+
+/* start tickets */
+th {
+    padding: 20px 0 !important;
+}
+td {
+    padding: 10px;
+}
+.kkkk {
+    overflow-x: auto;
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 200;
+}
+.tickets span {
+    color: #777;
+    font-size: 14px;
+}
+.tickets .sub-menu {
+  top: 110%;
+   background-color: var(--main-color) !important;
+   border: 1px solid #777;
+   display: none;
+}
+.tickets a {
+    color: #ccc;
+    padding: 5px !important;
+   
+}
+/* end tickets */
+
+
+
+
+/* .bullet-line-list li:before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+}
+
+.bullet-line-list li:before {
+    width: 15px;
+    height: 15px;
+    left: -30px;
+    top: 0;
+    border: 4px solid #00c689;
+    margin-right: 15px;
+    z-index: 2;
+    background: #ffffff;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ul li, ol li, dl li {
+    line-height: 1.8;
+}
+user agent stylesheet
+li {
+    text-align: -webkit-match-parent;
+}
+.bullet-line-list {
+    padding-left: 30px;
+    position: relative;
+    list-style-type: none;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #131633;
+    background-clip: border-box;
+    border: 1px solid #313452;
+    border-radius: 0;
+}
+.grid-margin {
+    margin-bottom: 1.875rem;
+}
+
+ */
+
+.inner {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+    top: 0;
+    right: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner2 {
+    top: 50% !important;
+}
+.inner-div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--font-color);
+   
+}
+.inner3 {
+    top: 100%;
+}
+.carddd p {
+    font-size: 14px !important;
+    color: #ccc !important;
+}
+.carddd h6 {
+    font-size: 15px !important;
+}
+.carddd i {
+    font-size: 16px !important;
+}
+
+.carddd .text-muted {
+    color: #777 !important;
+}
+/* media query */
+
+@media (max-width: 767.98px) {
+    
+    .main-div .box {
+        justify-content: center !important;
+    }
+    .main-div input {
+        width: 70px;
+        display: none;
+    }
+    .main-div .right-contain {
+        padding-left: 0px;
+    }
+}
